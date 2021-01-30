@@ -29,10 +29,35 @@ php bin/console doctrine:schema:update --force
 ```
 
 5. Run SQL command on Database App
-   
+
    [Database](https://drive.google.com/drive/folders/1zEOHb7EkXZOEFr1a-alKNyxgjOWsDmlc?usp=sharing)
 
 
+6. Login
+```sh
+curl --location --request POST 'http://127.0.0.1:8000/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "yasin",
+    "password": "Aa123"
+}'
+```
+
+7. Get Date
+
+Last step copy Token field and paste after --header 'Authorization: Bearer
+```sh
+curl --location --request POST 'http://127.0.0.1:8000/api/test/itemCount' \
+--header 'Authorization: Bearer COPIED TOKEN VALUE' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "period": "weekly",
+    "date_range": {
+        "start": "2021-01-22 00:00:00",
+        "end": "2021-01-28 23:59:59"
+    }
+}'
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
