@@ -17,19 +17,28 @@ This is  you need to use the softwares
 ### Installation
 
 ```sh
-git clone https://github.com/yasincetintas/next4biz.git
+git clone https://github.com/yasincetintas/next4bizCase.git
 ```
 3. Install Symfony packages
 ```sh
 php bin/console composer install
 ```
+4. Crate Scheme and Tables
+```sh
+php bin/console doctrine:schema:update --force
+```
+
+5. Run SQL command on Database App
+   
+   [Database](https://drive.google.com/drive/folders/1zEOHb7EkXZOEFr1a-alKNyxgjOWsDmlc?usp=sharing)
+
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Example Database Data and Table : [Database](https://github.com/yasincetintas/pathCase/tree/master/DATABASE)
-* Postman Collection : [Postman Collection Path](https://github.com/yasincetintas/pathCase/blob/master/postman/Yasin%20Cetintas%20Path%20Case.postman_collection.json)
+* Example Database Data and Table : [Database](https://drive.google.com/drive/folders/1zEOHb7EkXZOEFr1a-alKNyxgjOWsDmlc?usp=sharing)
+* Postman Collection : [Postman Collection Path](https://github.com/yasincetintas/next4bizCase/blob/master/postman/Next4biz.postman_collection.json)
 * How to install or Generate OpenSSL : [Documentation](https://emirkarsiyakali.com/implementing-jwt-authentication-to-your-api-platform-application-885f014d3358?source=social.tw )
 
 <!-- CONTACT -->
