@@ -1,0 +1,5 @@
+messages:
+  critical:
+    public: 'Bilinmeyen Hata!'
+  warning:
+    invalid_parameter: 'Boş veri'

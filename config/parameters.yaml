@@ -1,0 +1,6 @@
+parameters:
+  ##### LOCALE SETTINGS ######
+  locale: tr
+
+  ##### ROOT DIR SETTINGS ######
+  project_dir: '%kernel.project_dir%'

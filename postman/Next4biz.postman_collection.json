@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "b1a3e88b-246b-4064-a515-141946d5cc26",
+		"name": "Next4biz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"yasin\",\n    \"password\": \"Aa123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MTIwNDEwOTcsImV4cCI6MTYxMzEyNzQ5Nywicm9sZXMiOltdLCJ1c2VybmFtZSI6Inlhc2luIn0.ktRsN2v511JIHmuReMtQWZO4VnUzdaiFh6QV-aLbsmXJzi02h4omhAApNl2iKNUTQxYWcYbdajWy3AbgIcrr9qrGhkOKZKLL-oAimXw1XLto2P471gk6S11qGiPgskpfNI3kiHOHqCtt0NW_OqXFzazh4ZQRwu8N2ws1l3wllyhgFBpbvEpNlyx7q4-MA1S8kJ6Z9VygREcn3mq06ZHOHE5j9YpOfUPg1yOQq90NEg-5WsOSN0OrRS9pUVo1vyfH61nw8pEoiVdqb4Ma9Q4rCL1s6k_kINcAhlGA5QbUYbhUglRqZgpsClG5zUXEmLa5lFQXYKNSTRUxdFTteke42tyEaRQyGFUV4TWk0rpl9HOtabBK0GEfyuaZem3ILCdwiGCpEZWQChPS_vAVwnp6xMaa5_WZiCFhG0sl6wxc7NFJk87EAWuV8Wpv6thu1Gsh_tWDi2Y3G8IcvvK7WfrxUerZhkRuLU45sO5LL5on8ue9ZW_U19GwElxVmRyTQswWaSceJAlVum5ZrnpiQBifFlbpAQGHkeXYYDNqtg5Cb5mRLipBWT7fQoO4057X00QRxiU94d2FF9wvjKqOyA7BBT9tAksehydHWOwX5qrXVpoedEk5rN_QUOCiWBCzIZ_VtiZ3kCreVFfkO-R169rpEj-XCV9ieF2fuHwEYCum1Cs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"period\": \"weekly\",\n    \"date_range\": {\n        \"start\": \"2021-01-22 00:00:00\",\n        \"end\": \"2021-01-28 23:59:59\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/test/itemCount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"test",
+						"itemCount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
